@@ -73,6 +73,14 @@ class Car < Vehicle
 end
 
 class Bike < Vehicle
+  def initialize
+    super
+    @type = "Fixed"
+    @weight = 20
+    @color = "Red"
+    @seat = "Banana"
+  end
+
   def ring_bell
     puts "Ring ring!"
   end
