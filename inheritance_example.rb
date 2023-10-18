@@ -58,6 +58,15 @@ class Vehicle
 end
 
 class Car < Vehicle
+  def initialize
+    super
+    @fuel = "Unleaded"
+    @make = "Chevy"
+    @model = "S-10"
+    @color = "Red"
+    @drive = "Rear"
+  end
+
   def honk_horn
     puts "Beeeeeeep!"
   end
