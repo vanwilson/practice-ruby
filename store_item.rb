@@ -17,6 +17,11 @@
 # }
 
 # puts "#{item1[:size]} of #{item1[:name]} is $#{item1[:price]}"
+module Food
+  def shelf_life
+    @best_buy = "7 days"
+  end
+end
 
 class Store_item
   attr_reader :name, :size, :price
@@ -37,10 +42,7 @@ class Store_item
   end
 end
 
-class Food < Store_item
-  def shelf_life
-    @best_buy = "7 days"
-  end
+class Soda < Store_item
 end
 
 item1 = Store_item.new("Coca-Cola", "16 oz.", 2.50)
