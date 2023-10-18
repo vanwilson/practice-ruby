@@ -37,6 +37,12 @@ class Store_item
   end
 end
 
+class Food < Store_item
+  def shelf_life
+    @best_buy = "7 days"
+  end
+end
+
 item1 = Store_item.new("Coca-Cola", "16 oz.", 2.50)
 item1.print_item_info
 p item1.change_price(0.94)
